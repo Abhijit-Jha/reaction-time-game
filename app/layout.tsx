@@ -23,6 +23,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { Analytics } from './components/vercel-analytics'; // Adjust path as needed
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -34,7 +36,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-950 text-white font-sans`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
 }
+
