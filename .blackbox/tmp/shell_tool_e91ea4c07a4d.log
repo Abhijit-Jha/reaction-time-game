@@ -1,0 +1,42 @@
+
+> blackbox-cli@0.1.0 dev
+> next dev
+
+   ▲ Next.js 16.0.10 (Turbopack)
+   - Local:         http://localhost:3000
+   - Network:       http://192.168.0.100:3000
+
+ ✓ Starting...
+ ✓ Ready in 10.1s
+ ○ Compiling / ...
+ GET / 200 in 7.1s (compile: 6.7s, render: 343ms)
+C:\Users\abhij\OneDrive\Desktop\newassignment\blackbox-cli\node_modules\mongodb\lib\sdam\topology.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\abhij\OneDrive\Desktop\newassignment\blackbox-cli\node_modules\mongodb\lib\mongo_client.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\abhij\OneDrive\Desktop\newassignment\blackbox-cli\.next\dev\server\chunks\[root-of-the-server]__f8c3047e._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\abhij\OneDrive\Desktop\newassignment\blackbox-cli\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\abhij\OneDrive\Desktop\newassignment\blackbox-cli\.next\dev\server\chunks\node_modules_next_39ac7da4._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\abhij\OneDrive\Desktop\newassignment\blackbox-cli\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\abhij\OneDrive\Desktop\newassignment\blackbox-cli\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\abhij\OneDrive\Desktop\newassignment\blackbox-cli\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\abhij\OneDrive\Desktop\newassignment\blackbox-cli\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\abhij\OneDrive\Desktop\newassignment\blackbox-cli\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\abhij\OneDrive\Desktop\newassignment\blackbox-cli\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\abhij\OneDrive\Desktop\newassignment\blackbox-cli\node_modules\mongodb\lib\cmap\connect.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+Failed to submit score: MongoServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+    at <unknown> (MongoServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017)
+    at async connectToDatabase (C:\Users\abhij\OneDrive\Desktop\newassignment\blackbox-cli\.next\dev\server\chunks\[root-of-the-server]__f8c3047e._.js:71:5)
+    at async POST (C:\Users\abhij\OneDrive\Desktop\newassignment\blackbox-cli\.next\dev\server\chunks\[root-of-the-server]__f8c3047e._.js:127:24) {
+  errorLabelSet: Set(0) {},
+  reason: [TopologyDescription],
+  code: undefined,
+  [cause]: MongoNetworkError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+      at <unknown> (MongoNetworkError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017) {
+    errorLabelSet: Set(1) { 'ResetPool' },
+    beforeHandshake: false,
+    [cause]: AggregateError: 
+        at ignore-listed frames {
+      code: 'ECONNREFUSED'
+    }
+  }
+}
+ POST /api/leaderboard 500 in 34.3s (compile: 4.0s, render: 30.3s)
