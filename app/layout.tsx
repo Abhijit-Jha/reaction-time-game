@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -37,6 +38,11 @@ export default function RootLayout({
       >
         {children}
         <Analytics />
+        <Script
+          src="https://cloud.blackbox.ai/api/widget-loader"
+          data-widget-id="wdg_qzJU-3WsecIr"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
